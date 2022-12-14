@@ -1,0 +1,29 @@
+<ol class="list-group list-group-numbered">
+    <% roomsArray.forEach(room=> { %>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+     <div class="ms-2 me-auto">
+        <div class="fw-bold">
+        <%= room.title %>
+        </div>
+
+        <%= room.description %>
+        </div>
+        <% if (isAuthenticated) { %> 
+            <div>
+        <a class="btn btn-danger" href="/rooms/delete/<%= room._id %>">Delete</a>
+        <a class="btn btn-info" href="/edit_room/<%= room._id %>">Edit</a>
+        </div>
+        <% } %>
+        <span class="badge bg-primary rounded-pill"><%= room.totalUsers %></span>
+
+</li>
+        <% }) %>
+  </ol>
+
+  <% if (isAuthenticated) { %> 
+    <br>
+    <div class="m-2"><a class="btn btn-success" href="/add_room">Add</a>
+</div>
+  <% } %>
+
+  

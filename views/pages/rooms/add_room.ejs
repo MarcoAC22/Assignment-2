@@ -1,0 +1,29 @@
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Create A New Room </h1>
+    <div class="col-lg-3 mx-auto">
+      <form action="/add_room" method="POST">
+        <div class="mb-2">
+          <label for="Title" class="form-label">Title </label>
+          <input
+            type="text"
+            class="form-control"
+            name="title"
+            placeholder="title"
+            required
+          />
+        </div>
+        <div class="mb-2">
+          <label for="description" class="form-label">Description </label>
+          <input
+            type="tect"
+            class="form-control"
+            name="description"
+            placeholder="description"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+      </form>
+    </div>
+  </div>
+  
