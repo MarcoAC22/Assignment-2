@@ -1,10 +1,10 @@
 const axios = require("axios");
 const express = require("express");
-const Room = require("./Room");
-const Profile = require("./Profile");
+const Room = require("./room");
+const Profile = require("./profile");
 const router = express.Router();
 const mongoose = require("mongoose");
-const User = require("./User");
+const User = require("./user");
 
 const connectEnsureLogin = require("connect-ensure-login");
 const passport = require("passport");
