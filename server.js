@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 const passport = require("passport");
 const session = require("express-session");
-const UserDetails = require("./User");
+const UserDetails = require("./user");
 const routes = require("./router");
 const crypto = require("crypto");
 require("dotenv").config();
